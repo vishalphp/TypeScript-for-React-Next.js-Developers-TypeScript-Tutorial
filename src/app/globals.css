@@ -8,6 +8,12 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  
+  /* theme css*/
+  --background-color-white: #fff;
+  --background-yello-color: #FFE800;
+  --color-purpule:#4611a7;
+/* theme css*/
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -90,14 +96,42 @@ body {
   background: linear-gradient(
       to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
+      var(--background-color-white)
     )
-    rgb(var(--background-start-rgb));
+    var(--background-color-white);
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.background-yellow-color{
+  background-color: var(--background-yello-color);
+}
+.p-20{
+  padding: 20px;
+}
+.p-40{
+  padding: 40px;
+}
+.flex_sub_layer_1{
+  flex: 1;
+}
+.flex_sub_layer_2{
+  flex: 2;
+}
+.flex_sub_layer_3{
+  flex: 3;
+}
+a{
+  color: var(--color-purpule) ;
+}
+.item-null{
+  padding: 20px;
+}
+.item-1{
+  display: block !important;
 }
 
 @media (prefers-color-scheme: dark) {

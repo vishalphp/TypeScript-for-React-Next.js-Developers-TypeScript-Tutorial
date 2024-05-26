@@ -1,0 +1,38 @@
+.wrapperNavigation{
+display: flex;
+justify-content: space-around;
+align-items: center;
+list-style-type: none;
+}
+.wrapperNavigation ul{
+   list-style-type: none;
+   display: none;
+}   
+.wrapperNavigation a{
+    text-transform: capitalize;
+    font-weight: 600;
+    padding: 0px;
+    text-transform: uppercase;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+.anchorItems{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.anchorItems svg{
+    font-size: 30px;
+}
+.wrapperNavigation ul.openclass__menu{
+    display: block;
+    height: auto;
+    min-width: 250px;
+    text-align: left;
+}
+.posrelative{
+    position: relative;
+}
+.posabsolute{
+    position: absolute;
+}
