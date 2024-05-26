@@ -1,0 +1,17 @@
+.herobanner_wrapper{
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+}
+.hero__banner__h1{
+    font-size: 3.3333333333333335vw;
+    line-height: 1em;
+}
+.image__hero__wrapper img{
+    width: 100%;
+    height: auto;
+}
+.hero__main__subheading {
+    font-size: 1.25vw;
+    font-weight: 400;
+}

@@ -13,7 +13,8 @@
   --background-color-white: #fff;
   --background-yello-color: #FFE800;
   --color-purpule:#4611a7;
-/* theme css*/
+  --color-black: #000;
+  /* theme css*/
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -126,6 +127,12 @@ a {
 }
 a{
   color: var(--color-purpule) ;
+}
+.color_purpule_font{
+  color: var(--color-purpule);
+}
+.color_black_font{
+  color: var(--color-black);
 }
 .item-null{
   padding: 20px;
