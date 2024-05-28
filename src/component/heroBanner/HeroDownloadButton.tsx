@@ -19,7 +19,7 @@ const HeroDownloadButton = ({children, downloadButtonData}:downloadButtonDataPro
 
     return (
         <>
-          <button onClick={buttonClick} className={`${downloadStyle.download__button}`}>{downloadButtonData[0]?.buttonname}</button>
+          <button onClick={buttonClick} className={`${downloadStyle.download__button} color_white_font background_purpule_color`}>{downloadButtonData[0]?.buttonname}</button>
         </>
   )
 }

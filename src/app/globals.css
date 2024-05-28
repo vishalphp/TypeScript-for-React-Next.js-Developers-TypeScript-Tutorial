@@ -14,6 +14,8 @@
   --background-yello-color: #FFE800;
   --color-purpule:#4611a7;
   --color-black: #000;
+  --color-white: #fff;
+  --bacground-color-gray: #F0F3FC;
   /* theme css*/
 
   --primary-glow: conic-gradient(
@@ -131,14 +133,29 @@ a{
 .color_purpule_font{
   color: var(--color-purpule);
 }
+.background_purpule_color{
+  background-color: var(--color-purpule);
+}
+.background_gray_color{
+  background-color: var(--bacground-color-gray);
+}
 .color_black_font{
   color: var(--color-black);
+}
+.color_white_font{
+  color: var(--color-white);
 }
 .item-null{
   padding: 20px;
 }
 .item-1{
   display: block !important;
+}
+.gap40{
+  gap: 40px;
+}
+.gap20{
+  gap: 20px;
 }
 
 @media (prefers-color-scheme: dark) {
