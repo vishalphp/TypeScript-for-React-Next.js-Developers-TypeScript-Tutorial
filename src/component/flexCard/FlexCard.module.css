@@ -3,3 +3,19 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.display_grid{
+    display: grid; 
+}
+.display_grid.gap20{
+    grid-gap: 20px;
+}
+.display_grid.layer__4{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.display_grid.layer__2{
+    grid-template-columns: 1fr 1fr;
+}
+.display_grid > *{
+    justify-self: center;
+}

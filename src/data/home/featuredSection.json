@@ -1,0 +1,8 @@
+{
+    "images":[
+        {"image":"https://i.pinimg.com/564x/f6/60/a6/f660a637c5ea8ef2b00218bac3479c82.jpg", "name":"gpay"},
+        {"image":"https://i.pinimg.com/564x/10/16/93/10169346a15f48f251e88b9b8e8c5d9a.jpg","name":"phonePay"},
+        {"image":"https://i.pinimg.com/564x/49/29/52/492952b850fc17b25a06e9d12837a2e8.jpg","name":"paytm"},
+        {"image":"https://i.pinimg.com/564x/4d/25/27/4d2527b1f9891ed4f28e963981a1f93e.jpg", "name":"bank"}
+    ]
+}

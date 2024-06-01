@@ -14,4 +14,12 @@ const FlexCard = ({children, layer, className}: childrenPros) => {
   )
 }
 
+export const GridCard = ({children, layer, className}: childrenPros) => {
+
+  return (
+    <div className={`${styles.display_grid} ${styles[`layer__${layer}`]}  ${styles[`${className}`]} `}>{children}</div>
+  )
+}
+
+
 export default FlexCard;
