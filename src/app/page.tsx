@@ -11,9 +11,7 @@ export default function Home() {
     <main className={styles.main}>
       <HeroBanner content={heroBannerData.content} image={heroBannerData.image} />
       <Featured content={featuredData.images} />
-      
       Learn with us.
-    
     </main>
   );
 }

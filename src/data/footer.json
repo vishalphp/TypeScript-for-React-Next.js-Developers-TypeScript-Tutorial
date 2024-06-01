@@ -1,0 +1,61 @@
+{
+    "Zupee":[
+        {
+          "name":"About Us",
+          "value":"/about-us/"
+        },
+        {
+        "name":"RNG Certification",
+        "value": "/rng-certification/"
+        },
+        {
+        "name":"AIGF Skill Certificate",
+        "value": "/aifg-rng-certification/"
+        },
+        {
+        "name":"No Bots Certification",
+         "value": "/no-bot-certification/"
+        },
+        {
+         "name":"Skill Certificates",
+         "value":"/skill-certification/"
+        },
+        {
+        "name":"Privacy Policy",
+        "value":"privacy-policy"
+        },
+        {
+        "name":"Terms & Conditions",
+         "value": "terms-conditions"
+        },
+        {
+        "name":"Responsible Gaming",
+         "value": "/responsible-gaming/"
+        }
+    ],
+   "our game":[
+       {
+        "name":"Ludo",
+       "value":"/ludo/"
+    },
+    {
+        "name":"Snakes and ladders Plus",
+       "value":"/snakes-and-ladders-plus/"
+    },
+    {
+        "name":"Trump Cards Mania", 
+        "value": "trump-cards-mania"
+     }
+     ],
+     "Popular Reads":[
+        {"name":"Ludo Download","value":"ludo-download"},
+        {"name":"Best money earning apps in India ", "value":"best-money-earning-apps-in-india"},
+        {"name":"Play online cash games apk","value":"play-online-cash-games-apk"},
+        {"name":"Ludo earning app to win cash","value":"ludo-earning-app-to-win-cash"}
+     ],
+     "Payment Partners":[
+        {"name":"razorpay","value":"/razorpay/"},
+        {"name":"cashfree", "value":"/cashfree/"},
+        {"name":"juspay", "value":"/juspay/"}
+     ]
+}
