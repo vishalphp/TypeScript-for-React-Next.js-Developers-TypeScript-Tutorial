@@ -1,10 +1,11 @@
-import React, { Children } from 'react'
+import React from 'react'
 import styles from './FlexCard.module.css'
 
 type childrenPros = {
- children: React.ReactNode
+ children?: React.ReactNode
  layer?: number,
- className?: string
+ className?: string,
+ dangerouslySetInnerHTML?: { __html: string };
 }
 
 const FlexCard = ({children, layer, className}: childrenPros) => {
@@ -16,8 +17,22 @@ const FlexCard = ({children, layer, className}: childrenPros) => {
 
 export const GridCard = ({children, layer, className}: childrenPros) => {
 
+  const classNameBreak= className?.split(' ');
+  const coombinedClass = [ styles.display_grid, layer? styles[`layer__${layer}`]:'', ...classNameBreak? classNameBreak.map(classValue => styles[`${classValue}`] || classValue):[]].join(' ');
+
   return (
-    <div className={`${styles.display_grid} ${styles[`layer__${layer}`]}  ${styles[`${className}`]} `}>{children}</div>
+    <div className={`${styles.display_grid} ${styles[`layer__${layer}`]}  ${styles[`${className}`]} `} >{children}</div>
+  )
+}
+
+
+export const GridCardDangerouslySetInnerHTML = ({layer, className, dangerouslySetInnerHTML}: childrenPros) => {
+
+  const classNameBreak= className?.split(' ');
+  const coombinedClass = [ styles.display_grid, layer? styles[`layer__${layer}`]:'', ...classNameBreak? classNameBreak.map(classValue => styles[`${classValue}`] || classValue):[]].join(' ');
+  
+  return (
+    <div className={`${coombinedClass}`}  dangerouslySetInnerHTML={dangerouslySetInnerHTML} />
   )
 }
 

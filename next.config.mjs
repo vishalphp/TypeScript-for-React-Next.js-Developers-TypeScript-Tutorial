@@ -1,7 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ['i.pinimg.com'],
+      remotePatterns: [
+        {
+          protocol: "https", // or http
+          hostname: "i.pinimg.com", // if your website has no www, drop it
+        },
+       ],
       },
 };
 // next.config.mjs
