@@ -173,6 +173,9 @@ a{
 .nollisttype{
   list-style-type: none;
 }
+.footer_wrapper{
+  padding: 40px;
+}
 
 @media (prefers-color-scheme: dark) {
   html {
