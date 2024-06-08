@@ -5,7 +5,7 @@ type childrenPros = {
  children?: React.ReactNode
  layer?: number,
  className?: string,
- dangerouslySetInnerHTML?: { __html: string };
+ dangerouslySetInnerHTML?: { __html: any};
 }
 
 const FlexCard = ({children, layer, className}: childrenPros) => {

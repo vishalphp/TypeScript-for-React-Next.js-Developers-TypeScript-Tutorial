@@ -2,3 +2,16 @@
     width: 100%;
     padding: 20px;
 }
+
+.copyright_footer{
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+}
+.soc_name a{
+    color: white;
+}
+.copmeswraper{
+    margin: 20px;
+    color: white;
+}

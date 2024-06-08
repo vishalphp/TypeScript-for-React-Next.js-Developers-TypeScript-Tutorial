@@ -1,3 +1,5 @@
+import React, { FC } from "react";
+import { FaFacebook } from "react-icons/fa";
 type objectData = {
     name: string,
     value: string
@@ -6,8 +8,8 @@ type dataProps = {
     [key: string]: objectData[]
 }
 
-type socialList = {
-   facebook?: string,
+type socialList ={
+   facebook?:  string,
    twitter?: string,
    instagram?: string,
    gmail?:string
@@ -15,11 +17,33 @@ type socialList = {
 type copyrightMessageData = {
     copyrighttext?: string
 }
-type copyrightDataProps ={
-    children?:any,
+export type copyrightDataProps = {
+    children?: React.ReactNode,
     social: socialList[],
-    textmessage: copyrightMessageData[]
+    textmessage: copyrightMessageData[],
 }
+
+
+export const copySocialArray = (dataCopy: copyrightDataProps) =>{
+
+   return dataCopy.social.map((soc)=>{
+            const [socKey, socVal] = Object.entries(soc)[0];
+            //let socKeyHtml: React.ReactNode = null;
+            return {"name":socKey, "val":socVal};
+        });
+//return socialElements;
+}
+
+export const copyrightMessageArray = (dataCopy: copyrightDataProps) =>{
+
+    return dataCopy.textmessage.map((textmessage)=>{
+             const [socKey, socVal] = Object.entries(textmessage)[0];
+             //let socKeyHtml: React.ReactNode = null;
+             return {"name":socKey, "val":socVal};
+         });
+ //return socialElements;
+ }
+
 
 export const objectArrayLoop = (data: dataProps) =>{
 
@@ -36,18 +60,3 @@ export const objectArrayLoop = (data: dataProps) =>{
   return returnValueHtml;
 }
 
-export const copyRightArrayHtml = (dataCopy: copyrightDataProps) =>{
-    let returnHTTML =''; 
-    dataCopy.social.forEach((soc, index)=>{
-        const [socKey, socVal] = Object.entries(soc)[0];
-        let socKeyHtml: any = ''; 
-        if(socKey === 'facebook'){ 
-             
-         }
-
-        returnHTTML += `<div class="socialicon" key={${index}}><a href={${socVal}}>${socKeyHtml}</a></div>`;
-    });
-
-    returnHTTML += ``;
-    return returnHTTML;
-}
