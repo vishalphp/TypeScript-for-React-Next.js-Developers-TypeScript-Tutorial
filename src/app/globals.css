@@ -176,6 +176,9 @@ a{
 .footer_wrapper{
   padding: 40px;
 }
+.linehight-50{
+  line-height: 50px;
+}
 .clientcomponentwrap, .loading{
   display: flex;
   justify-content: center;

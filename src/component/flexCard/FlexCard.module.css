@@ -16,6 +16,10 @@
 .display_grid.layer__2{
     grid-template-columns: 1fr 1fr;
 }
+
+.display_grid.layer__1{
+    grid-template-columns: 1fr;
+}
 .display_grid > *{
     justify-self: center;
 }

@@ -5,7 +5,7 @@ import HeroBanner from "@/component/heroBanner/HeroBanner";
 import Featured from "@/component/featuredSection/Featured";
 import featuredData from '@/data/home/featuredSection.json';
 
- const Ludo =()=> {
+const Ludo =()=> {
 
   return (
     <main className={styles.main}>

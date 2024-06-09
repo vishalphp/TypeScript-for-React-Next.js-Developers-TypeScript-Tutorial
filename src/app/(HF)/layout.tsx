@@ -4,6 +4,8 @@ import "../globals.css";
 import Header from "@/component/header/Header";
 import Head from "next/head";
 import Footer from "@/component/footer/Footer";
+//import { headers } from 'next/headers';
+//import { notFound } from "next/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +19,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
   return (
     <html lang="en"> 
       <Head >
