@@ -18,7 +18,7 @@ const Logo = ({children, src, width, height, alt}: childrenProps) => {
       width={width || 110}
       height={height || 'auto'}
       alt={alt || 'logo'}
-      /></Link>
+      /></Link> 
     </>
   )
 }
