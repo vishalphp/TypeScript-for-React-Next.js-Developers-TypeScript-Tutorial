@@ -176,6 +176,15 @@ a{
 .footer_wrapper{
   padding: 40px;
 }
+.clientcomponentwrap, .loading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
 
 @media (prefers-color-scheme: dark) {
   html {

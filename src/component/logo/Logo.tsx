@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 type childrenProps = {
@@ -12,12 +13,12 @@ type childrenProps = {
 const Logo = ({children, src, width, height, alt}: childrenProps) => {
   return (
     <>
-     <Image 
+     <Link href="/"><Image 
       src={src || '/default-logo.png'}
       width={width || 110}
       height={height || 'auto'}
       alt={alt || 'logo'}
-      />
+      /></Link>
     </>
   )
 }

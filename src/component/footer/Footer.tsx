@@ -14,7 +14,6 @@ const Footer = ()=> {
 const result = objectArrayLoop(footerData);
 const copySocialResult = copySocialArray(footerCopyRightData);
 const copyMesRes = copyrightMessageArray(footerCopyRightData);
-console.log(copyMesRes);
 
 const retsocHTML = copySocialResult.map((soc, index)=> <>
 <div className='socialwraper' key={index}>
