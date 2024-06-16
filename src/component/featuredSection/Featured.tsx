@@ -12,15 +12,17 @@ type featuredImages = {
 
 type featuredProps = {
   children?: React.ReactNode,
-  content: featuredImages[]
+  content: featuredImages[],
+  title?: string,
+  layer?: number
 }
 
-const Featured = ({children, content}:featuredProps)=> {
+const Featured = ({children, content, title, layer=4}:featuredProps)=> {
   return (
      <div className={`${featuredStyle.featured__wrapper_section} background_gray_color`}>
        <Container>
-         <h2 className={`${featuredStyle.featured__h2_title} color_purpule_font ${signPrenterFont.className}`}>Game Cash Withdrawal</h2>
-         <GridCard layer={4} className='gap20'>
+         <h2 className={`${featuredStyle.featured__h2_title} color_purpule_font ${signPrenterFont.className}`}>{title}</h2>
+         <GridCard layer={layer} className='gap20'>
              {
               content.map((item, index) => <div key={index} className='featured_image_col'><Image  src={item.image} alt={item.name} width={300} height={300} /></div>) 
              }

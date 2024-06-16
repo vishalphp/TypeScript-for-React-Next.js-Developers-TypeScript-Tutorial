@@ -1,0 +1,21 @@
+.fullsection {
+    width: 100%;
+    display: inline-block;
+    padding: 20px 0;
+}
+.testmonial__heading{
+    text-align: center;
+    font-size: 2.7083333333333335vw;
+    margin: auto;
+}
+.testmonial__subheading {
+    font-size: 1.25vw;
+    font-weight: 400;
+    text-align: center;
+}
+.testmonial__review__image{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,6 +1,6 @@
 {
     "download":[{
-        "buttonname":"download now"},
+        "buttonname":"Play now"},
         {
           "downloadlink": "http://localhost:4000/"   
         }

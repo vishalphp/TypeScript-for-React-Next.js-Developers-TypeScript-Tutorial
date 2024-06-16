@@ -188,6 +188,34 @@ a{
   font-size: 20px;
   font-weight: 500;
 }
+.featured_image_col img{
+  width: 100%;
+  height: auto;
+}
+.fullwidth{
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+.graybackground{background: #F0F3FC;}
+.question{
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+.faapiwraooer{
+  padding: 10px 0;
+}
+.faqwrap{
+  margin-bottom: 15px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 15px;
+}
+.answer{
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px 0;
+}
 
 @media (prefers-color-scheme: dark) {
   html {

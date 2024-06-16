@@ -1,0 +1,14 @@
+{
+    "title":"loream lipsm video",
+    "src":"http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+    "height": "700",
+    "width": "1200",
+    "autoplay": false,
+    "controls": true,
+    "loop": false,
+    "poster": "https://assets.codepen.io/32795/poster.png",
+    "preload": "none",
+    "titleTwo":"loream text dummy",
+    "descriptionTwo":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+
+}

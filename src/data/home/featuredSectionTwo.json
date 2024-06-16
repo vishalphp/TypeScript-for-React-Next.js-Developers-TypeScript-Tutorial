@@ -1,0 +1,11 @@
+{
+    "title":"this is featured 2",
+    "images":[
+        {"image":"https://i.pinimg.com/564x/d3/07/4b/d3074bf7238458483058480197cca91a.jpg", "name":"game 1"},
+        {"image":"https://i.pinimg.com/564x/b0/fc/51/b0fc51272eda962028cae2ccd69d3578.jpg","name":"game 2"},
+        {"image":"https://i.pinimg.com/564x/d3/07/4b/d3074bf7238458483058480197cca91a.jpg","name":"game 3"},
+        {"image":"https://i.pinimg.com/564x/b0/fc/51/b0fc51272eda962028cae2ccd69d3578.jpg", "name":"game 4"},
+        {"image":"https://i.pinimg.com/564x/d3/07/4b/d3074bf7238458483058480197cca91a.jpg","name":"game 5"},
+        {"image":"https://i.pinimg.com/564x/b0/fc/51/b0fc51272eda962028cae2ccd69d3578.jpg", "name":"gsme 6"}
+    ]
+}
