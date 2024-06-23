@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFacebook, FaTwitter } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 
 
 export default function SocialIconsComp() {

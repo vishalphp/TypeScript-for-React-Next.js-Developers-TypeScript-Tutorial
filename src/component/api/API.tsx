@@ -20,10 +20,10 @@ export default function API() {
         setAPIData();
     },[setAPIData])
 
-    useEffect(()=>{
+    /*useEffect(()=>{
      console.log(data); 
      console.log("data change");
-    },[data]);
+    },[data]);*/
 
   return (
     <>

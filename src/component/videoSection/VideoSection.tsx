@@ -17,7 +17,7 @@ type videoProps = {
 }
 
 
-export default function VideoSection({title, src, titleTwo, description, width, height, autoplay=false,controls=false, loop, poster, preload=false}: videoProps) {
+export default function VideoSection({title, src, titleTwo, description, width, height, autoplay=false,controls=false, loop, poster, preload="none"}: videoProps) {
   return (
     <div className='fullwidth'>
        <Container>

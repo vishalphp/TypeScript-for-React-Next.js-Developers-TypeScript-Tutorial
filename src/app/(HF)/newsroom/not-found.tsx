@@ -1,5 +1,5 @@
 import Container from '@/component/container/Container'
-import FlexCard, { GridCard } from '@/component/flexCard/FlexCard'
+import{ GridCard } from '@/component/flexCard/FlexCard'
 import React from 'react'
 
 export default function NotFound() {

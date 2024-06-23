@@ -18,7 +18,7 @@ type heroProps = {
     image: string | StaticImageData
 }
 
-const HeroBanner = ({children, content, image}:heroProps) => {
+const HeroBanner = ({content, image}:heroProps) => {
     
   return (
     <>

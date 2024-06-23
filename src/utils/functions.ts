@@ -1,7 +1,4 @@
-import React, { FC } from "react";
-import { FaFacebook } from "react-icons/fa";
-import { NextResponse } from "next/server";
-import type { NextResponse } from "next/server";
+import React from "react";
 
 type objectData = {
     name: string,

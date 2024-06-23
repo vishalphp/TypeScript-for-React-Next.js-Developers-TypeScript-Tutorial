@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react'
 import styles from './FlexCard.module.css'
 
@@ -17,8 +18,8 @@ const FlexCard = ({children, layer, className}: childrenPros) => {
 
 export const GridCard = ({children, layer, className}: childrenPros) => {
 
-  const classNameBreak= className?.split(' ');
-  const coombinedClass = [ styles.display_grid, layer? styles[`layer__${layer}`]:'', ...classNameBreak? classNameBreak.map(classValue => styles[`${classValue}`] || classValue):[]].join(' ');
+  //const classNameBreak= className?.split(' ');
+ // const coombinedClass = [ styles.display_grid, layer? styles[`layer__${layer}`]:'', ...classNameBreak? classNameBreak.map(classValue => styles[`${classValue}`] || classValue):[]].join(' ');
 
   return (
     <div className={`${styles.display_grid} ${styles[`layer__${layer}`]}  ${styles[`${className}`]} `} >{children}</div>

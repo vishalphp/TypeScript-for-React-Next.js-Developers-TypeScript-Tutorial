@@ -11,7 +11,7 @@ type downloadButtonDataProps = {
     downloadButtonData: buttonProps[],
 }
 
-const HeroDownloadButton = ({children, downloadButtonData}:downloadButtonDataProps) => {
+const HeroDownloadButton = ({downloadButtonData}:downloadButtonDataProps) => {
 
   const buttonClick =()=>{
     window.open(downloadButtonData[1]?.downloadlink,"_blank");

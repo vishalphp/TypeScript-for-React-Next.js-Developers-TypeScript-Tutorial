@@ -2,22 +2,21 @@ import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-type childrenProps = {
-    children?: React.ReactNode,
-    src?: string | StaticImageData,
-    width?: number,
-    height?: string | `${number}`,
-    alt?: string 
+interface NextImageProps {
+  src: string | StaticImageData;
+  width: number;
+  height: number;
+  alt: string;
 }
 
-const Logo = ({children, src, width, height, alt}: childrenProps) => {
+const Logo = ({src, width, height, alt}: NextImageProps) => {
   return (
     <>
      <Link href="/"><Image 
-      src={src || '/default-logo.png'}
-      width={width || 110}
-      height={height || 'auto'}
-      alt={alt || 'logo'}
+      src={src}
+      width={width}
+      height={height}
+      alt={alt}
       /></Link> 
     </>
   )

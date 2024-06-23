@@ -17,7 +17,7 @@ type featuredProps = {
   layer?: number
 }
 
-const Featured = ({children, content, title, layer=4}:featuredProps)=> {
+const Featured = ({content, title, layer=4}:featuredProps)=> {
   return (
      <div className={`${featuredStyle.featured__wrapper_section} background_gray_color`}>
        <Container>

@@ -11,7 +11,7 @@ type headerProps = {
     children?: React.ReactNode
 }
 
-const Header = ({children}: headerProps) =>{
+const Header = ({}: headerProps) =>{
   
 
   return (
@@ -20,7 +20,7 @@ const Header = ({children}: headerProps) =>{
      <Container>
       <FlexCard layer={3}>
         <div className='logo flex_sub_layer_1'>
-            <Logo src={LogoImage} width={140} height="auto" alt="zup logo"  />
+            <Logo src={LogoImage} width={140} height={100} alt="zup logo"  />
         </div>
         <div className='navigation flex_sub_layer_2'>
             <Navigation menus={navigationData.menus} />

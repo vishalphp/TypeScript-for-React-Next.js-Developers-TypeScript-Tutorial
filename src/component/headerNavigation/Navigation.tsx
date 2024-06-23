@@ -17,7 +17,7 @@ type menusProps = {
   menus: menusItems[]
 }
 
-const Navigation: React.FC<menusProps> = ({children, menus}) => {
+const Navigation: React.FC<menusProps> = ({menus}) => {
 //const Navigation = ({children, menus}: menusProps) => {
 
   //const menuArrayNull: (string | number | null)[] = [];

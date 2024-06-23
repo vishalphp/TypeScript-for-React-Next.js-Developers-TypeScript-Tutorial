@@ -1,20 +1,29 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react';
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 
-type imageProps = {
-    src: string | StaticImageData,
-    width?: string | number,
-    height?: string | number,
-    alt?: string
+// Define the props interface
+interface NextImageProps {
+  src: string | any;
+  width: number | string;
+  height: number | string;
+  alt?: string;
+}
+
+export default function ImageComp({src, width, height, alt}: NextImageProps) {
+
+  // Check if src is a string (URL) or StaticImageData
+  const isStaticImage = typeof src !== 'string';
+
+  // If it's a StaticImageData, use it directly
+  if (isStaticImage) {
+    return <Image src={src} alt={alt || 'Image'} />;
   }
 
+  // If it's a string (URL), ensure width and height are in number format
+  const parsedWidth = typeof width === 'string' ? 1000 : width; // Replace 1000 with your default width
+  const parsedHeight = typeof height === 'string' ? 1000 : height; // Replace 1000 with your default height
 
-export default function ImageComp({src, width, height, alt}: imageProps) {
+  return <Image src={src as string} width={parsedWidth} height={parsedHeight} alt={alt || 'Image'} />;
 
-
-  return (
-    <>
-      <Image src={src} width={width} height={height} alt={alt} />
-    </>
-  )
-}
+};

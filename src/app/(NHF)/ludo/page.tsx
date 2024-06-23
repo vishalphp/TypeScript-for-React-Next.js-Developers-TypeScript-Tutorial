@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 import heroBannerData from '@/data/home/homeHeroBanner.json';
 import HeroBanner from "@/component/heroBanner/HeroBanner";

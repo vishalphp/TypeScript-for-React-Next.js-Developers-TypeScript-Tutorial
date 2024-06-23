@@ -14,6 +14,7 @@ type menusItems = {
 };
 
 type MenuItemsProps = {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   item: any & menusItems;
 };
 
