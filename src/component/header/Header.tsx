@@ -22,7 +22,7 @@ const Header = ({}: headerProps) =>{
         <div className='logo flex_sub_layer_1'>
             <Logo src={LogoImage} width={140} height={100} alt="zup logo"  />
         </div>
-        <div className='navigation flex_sub_layer_2'>
+        <div className={`${headerStyle.navigation} flex_sub_layer_2`}>
             <Navigation menus={navigationData.menus} />
         </div>  
       </FlexCard>

@@ -9,11 +9,13 @@ import featuredDataTwo from '@/data/home/featuredSectionTwo.json';
 import VideoSection from "@/component/videoSection/VideoSection";
 import videoData from '@/data/home/videoSection.json';
 import API from "@/component/api/API";
+import {useTranslations} from 'next-intl';
 
 export default function Home() {
-
+  const t = useTranslations('IndexPage');
   return (
     <main className={styles.main}>
+      <h1>{t('title')}</h1>
       <HeroBanner content={heroBannerData.content} image={heroBannerData.image} />
       <Featured content={featuredData.images} title={featuredData.title} layer={4} />
       <Testmonial content={testmonialData} />

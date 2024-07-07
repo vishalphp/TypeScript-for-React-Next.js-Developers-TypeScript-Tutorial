@@ -3,6 +3,7 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import { MdKeyboardArrowDown } from "react-icons/md";
 import headerStyle from './headerNavigation.module.css'
+//import { ctxTransfer } from '@/context/Context';
 
 type menusItems = {
   id: number;
@@ -19,6 +20,7 @@ type MenuItemsProps = {
 };
 
 const MenuItems: React.FC<MenuItemsProps> = ({ item }) => {
+  //const { lang, setLang, langSets } = ctxTransfer();
 
   const [openMenu, setOpenMenu] = useState(false);
   const [modalMenu, setModalMenu] = useState("modal__close");

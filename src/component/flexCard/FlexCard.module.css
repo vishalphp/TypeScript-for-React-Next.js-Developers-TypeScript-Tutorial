@@ -26,3 +26,12 @@
 .display_grid > *{
     justify-self: center;
 }
+
+@media screen and (max-width: 480px) {
+    .display_flex{
+        flex-direction:column;
+    }
+    .display_grid.layer__4{
+        grid-template-columns: 1fr 1fr;
+    }
+}

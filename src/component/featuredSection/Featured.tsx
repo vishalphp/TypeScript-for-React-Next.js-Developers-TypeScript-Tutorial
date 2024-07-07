@@ -19,12 +19,12 @@ type featuredProps = {
 
 const Featured = ({content, title, layer=4}:featuredProps)=> {
   return (
-     <div className={`${featuredStyle.featured__wrapper_section} background_gray_color`}>
+     <div className={`${featuredStyle.featured__wrapper_section} background_gray_color `}>
        <Container>
          <h2 className={`${featuredStyle.featured__h2_title} color_purpule_font ${signPrenterFont.className}`}>{title}</h2>
          <GridCard layer={layer} className='gap20'>
              {
-              content.map((item, index) => <div key={index} className='featured_image_col'><Image  src={item.image} alt={item.name} width={300} height={300} /></div>) 
+              content.map((item, index) => <div key={index} className='featured_image_col p-20'><Image  src={item.image} alt={item.name} width={300} height={300} /></div>) 
              }
          </GridCard>
        </Container>

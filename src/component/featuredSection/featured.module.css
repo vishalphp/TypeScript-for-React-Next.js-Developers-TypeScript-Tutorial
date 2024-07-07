@@ -8,3 +8,8 @@
     text-align: center;
     margin: auto;
 }
+@media screen and (max-width: 480px) {
+.featured__h2_title {
+    font-size: 26px;
+}
+}

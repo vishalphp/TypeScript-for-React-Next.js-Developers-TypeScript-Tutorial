@@ -36,3 +36,14 @@ list-style-type: none;
 .posabsolute{
     position: absolute;
 }
+
+
+@media screen and (max-width: 480px) {
+    .wrapperNavigation{
+      display: block;
+    }
+    .posabsolute{
+        position: relative;
+    }
+   
+}

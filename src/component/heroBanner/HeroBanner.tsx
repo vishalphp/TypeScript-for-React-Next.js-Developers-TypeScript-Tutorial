@@ -24,8 +24,8 @@ const HeroBanner = ({content, image}:heroProps) => {
     <>
     <div className={`${herobannerStyle.herobanner_wrapper}`}>
       <Container>
-        <FlexCard layer={2} className="gap20">
-            <div className='content__hero__wrapper flex_sub_layer_2'>
+        <FlexCard layer={2} className="gap20 columrevers p-20">
+            <div className={`${herobannerStyle.content__hero__wrapper} flex_sub_layer_2`}>
                 {content.map((heroContent, index) => (
                    <div key={index}><div className='hero__main__heading'><h1 className={`${herobannerStyle.hero__banner__h1} ${signPrenterFont.className} color_purpule_font`}>{heroContent.mainheading}</h1></div><div className={`${inter400.className} color_black_font ${herobannerStyle.hero__main__subheading}`}>{heroContent.subheading}</div></div>
                   )
