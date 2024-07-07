@@ -1,8 +1,9 @@
 import createMiddleware from 'next-intl/middleware';
 //import {localePrefix, defaultLocale, locales, pathnames} from '@/config';
 import {NextRequest} from 'next/server';
-import {locales} from '@/config';
- 
+import {locales, defaultLocale} from '@/config';
+import { NextResponse } from 'next/server';
+
 export default async function middleware(request: NextRequest) {
   //const [, locale, ...segments] = request.nextUrl.pathname.split('/');
    //console.log(request.nextUrl);
@@ -17,9 +18,11 @@ export default async function middleware(request: NextRequest) {
     }
   }*/
  
+  //const pathname = request.nextUrl.pathname;
+
   const handleI18nRouting = createMiddleware({
     locales,
-    defaultLocale: 'en'
+    defaultLocale: defaultLocale
   });
   const response = handleI18nRouting(request);
   return response;
@@ -33,6 +36,7 @@ export const config = {
     '/(hi|en)/:path*',
     // Enable redirects that add missing locales
     // (e.g. `/pathnames` -> `/en/pathnames`)
+    '/((?!api|_next/static|_next/image|favicon.ico).*)',
     //'/((?!_next|_vercel|.*\\..*).*)'
   ]
 };

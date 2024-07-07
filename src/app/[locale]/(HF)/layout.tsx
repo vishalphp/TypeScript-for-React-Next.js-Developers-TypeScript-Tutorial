@@ -1,3 +1,5 @@
+import Footer from "@/component/footer/Footer";
+import Header from "@/component/header/Header";
 import type { Metadata } from "next";
 //import { Inter } from "next/font/google";
 //import "@/app/globals.css";
@@ -14,5 +16,11 @@ export default function RootLayout({
 }:{
   children: React.ReactNode;
 }) {
-  return children;
+  return (
+      <>
+      <Header />
+        {children}
+      <Footer />
+      </>
+  ); 
 }

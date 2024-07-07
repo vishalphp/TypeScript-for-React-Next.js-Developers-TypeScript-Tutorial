@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@/app/globals.css";
-import Header from "@/component/header/Header";
+//import Header from "@/component/header/Header";
 import Head from "next/head";
-import Footer from "@/component/footer/Footer";
+//import Footer from "@/component/footer/Footer";
 //import { headers } from 'next/headers';
 //import { notFound } from "next/navigation";
 //import { ContextProviderNext, ctxTransfer } from "@/context/Context";
@@ -35,11 +35,9 @@ export default async function RootLayout({
          <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head>
       <body className={inter.className} suppressHydrationWarning={true}>
-      <Header />
       <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
-      <Footer />
         </body> 
     </html>
   );
